@@ -41,7 +41,6 @@ import {KeycloakAngularModule,KeycloakService} from "keycloak-angular";
     HttpClientModule,
     KeycloakAngularModule
   ],
-
   providers: [
    /* {
       provide: APP_INITIALIZER,
