@@ -4,7 +4,7 @@ import {ProductsComponent} from "./products/products.component";
 import {CustomersComponent} from "./customers/customers.component";
 import {OrdersComponent} from "./orders/orders.component";
 import {OrderDetailsComponent} from "./order-details/order-details.component";
-import {AuthGuard} from "./service/auth.guard";
+import {AuthGuard} from "./services/auth.guard";
 
 const routes: Routes = [
   {

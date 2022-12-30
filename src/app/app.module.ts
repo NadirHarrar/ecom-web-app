@@ -21,7 +21,7 @@ function initializedKeycloak(keycloak: KeycloakService){
       initOptions:{
         onLoad:'check-sso',
         silentCheckSsoRedirectUri:
-          window.location.origin + ''
+          window.location.origin + '/assets/check-sso.html'
       },
     });
 }
@@ -47,7 +47,7 @@ function initializedKeycloak(keycloak: KeycloakService){
       useFactory: initializedKeycloak,
       multi:true,
       deps: [KeycloakService]
-    }
+    },
   ],
   bootstrap: [AppComponent]
 })
