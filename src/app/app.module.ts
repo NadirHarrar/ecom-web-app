@@ -10,12 +10,12 @@ import { OrdersComponent} from "./orders/orders.component";
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import {KeycloakAngularModule,KeycloakService} from "keycloak-angular";
 
-/*function initializedKeycloak(keycloak: KeycloakService){
+function initializedKeycloak(keycloak: KeycloakService){
   return () =>
     keycloak.init({
       config: {
-        url:'http://localhost:8080/auth',
-        realm:'my-ecom-realm',
+        url:'http://localhost:8080',
+        realm:'my-ecom-app',
         clientId:'ecom-web',
       },
       initOptions:{
@@ -25,7 +25,7 @@ import {KeycloakAngularModule,KeycloakService} from "keycloak-angular";
       },
     });
 }
-*/
+
 
 @NgModule({
   declarations: [
@@ -42,12 +42,12 @@ import {KeycloakAngularModule,KeycloakService} from "keycloak-angular";
     KeycloakAngularModule
   ],
   providers: [
-   /* {
+    {
       provide: APP_INITIALIZER,
       useFactory: initializedKeycloak,
       multi:true,
       deps: [KeycloakService]
-    }*/
+    }
   ],
   bootstrap: [AppComponent]
 })
